@@ -1,0 +1,79 @@
+<h4> Categoria: {{ planta.tipo }} </h4>
+<article>
+    <header>
+        <h2> {{ planta.genero }} {{ planta.especie }} </h2>
+    </header>
+    <div class="coluna">
+        <div>
+            <h3>
+                <label> Dados gerais: </label>
+                <ul>
+                    <li> Nome científico:
+                        <strong class="fonte"> {{ planta.genero }} {{ planta.especie }}</strong>
+                    </li>
+                    <li *ngIf="planta.nomePopular"> Nome popular:
+                        <strong class="fonte"> {{ planta.nomePopular }} </strong>
+                    </li>
+                    <li> Gênero:
+                        <strong class="fonte">
+                            <a> {{ planta.genero }} </a>
+                        </strong>
+                    </li>
+                    <li> Espécie:
+                        <strong class="fonte"> {{ planta.especie }} </strong>
+                    </li>
+                    <li *ngIf="planta.especificacao">
+                        Especificação:
+                        <strong class="fonte"> {{ planta.especificacao }} </strong>
+                    </li>
+                    <li> Tipo de planta:
+                        <strong class="fonte"> {{ planta.tipo }} </strong>
+                    </li>
+                    <li *ngIf="planta.detalhe">
+                        Você sabia?
+                        <p class="fonte"> {{ planta.detalhe }} </p>
+                    </li>
+                </ul>
+            </h3>
+        </div>
+        <div class="alinhar">
+            <img src="{{ planta.imagem }}" width="50%">
+        </div>
+
+        <h3>
+            <label> Cuidados: </label>
+            <ul>
+                <li> Substrato:
+                    <strong class="fonte">
+                        <!-- {{ planta.substrato }} -->
+                    </strong>
+                </li>
+                <li> Água:
+                    <strong class="fonte">
+                        <!-- {{ planta.agua }} -->
+                    </strong>
+                </li>
+                <li> Iluminação:
+                    <strong class="fonte">
+                        <!-- {{ planta.iluminacao }} -->
+                    </strong>
+                </li>
+                <li> Temperatura:
+                    <strong class="fonte">
+                        <!-- {{ planta.temperatura }} -->
+                    </strong>
+                </li>
+                <li> Umidade do ar:
+                    <strong class="fonte">
+                        <!-- {{ planta.umidade }} -->
+                    </strong>
+                </li>
+                <li> Ventos: 
+                    <strong class="fonte">
+                        <!-- {{ planta.ventos }} -->
+                    </strong>
+                </li>
+            </ul>
+        </h3>
+    </div>
+</article>

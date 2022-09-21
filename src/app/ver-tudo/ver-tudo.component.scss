@@ -1,0 +1,25 @@
+h2 {
+    font-family: 'Avocado Cake';
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+article {
+    font-family: "Write Song";
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 35%;
+    text-align: start;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(55, 92, 92);
+    cursor: pointer;
+}

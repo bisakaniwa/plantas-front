@@ -1,0 +1,23 @@
+<nav>
+    <header class="margem">O que você gostaria de fazer?</header>
+    <ul>
+    <p [(ngModel)]="tudo">
+        <a (click)="mostrarTudo()" routerLink="ver-tudo">Ver lista completa<i class="fa-regular fa-hand-pointer"></i> </a>
+    </p>
+    <p> 
+        <app-buscar></app-buscar>
+    </p> 
+    <p>
+        <a (click)="adicionar()" routerLink="adicionar">Cadastrar uma planta nova<i class="fa-regular fa-hand-pointer"></i></a>
+    </p>
+    <p>
+        <a routerLink="deletar">Deletar uma planta<i class="fa-regular fa-hand-pointer"></i></a>
+    </p>
+    <p><label>
+        Modificar:</label>
+        <ul>
+        <li><a> Dados gerais de uma planta </a></li>
+        <li><a> Cuidados com uma planta </a></li>
+    </ul>
+</ul>
+</nav>

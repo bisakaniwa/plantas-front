@@ -1,0 +1,8 @@
+<h2>Resultado da sua busca:</h2>
+
+<h3>O que encontramos:</h3>
+
+<div *ngFor="let planta of plantas">
+        <a>{{ planta.genero }} {{ planta.especie}}</a> <br>
+        <img src="{{ planta.imagem }}" width="50%">
+</div>

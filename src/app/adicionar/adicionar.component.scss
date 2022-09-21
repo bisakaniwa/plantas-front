@@ -1,0 +1,42 @@
+header {
+    font-family: 'Avocado Cake';
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 3%;
+    padding-bottom: 1%;
+}
+
+section {
+    margin-top: 1%;
+    font-family: 'Write Song';
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+input, button {
+    font-family: 'Write Song';
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+input {
+    width: 50%;
+    align-self: center;
+    margin-top: 2%;
+    align-content: center;
+}
+
+article {
+    font-family: 'Write Song';
+    font-size: 2.3rem;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 30% 33% auto;
+}
+
+.box {
+    width: 100%;
+}

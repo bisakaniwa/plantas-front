@@ -1,0 +1,10 @@
+<h2>Plantinhas cadastradas:</h2>
+<ol>
+    <div *ngFor="let todas of plantas; index as i">
+        <article>
+            <li>
+                <a [routerLink]="['../individual/', todas.id]">
+                     {{ todas.genero }} {{ todas.especie }} </a></li>
+        </article>
+    </div>
+</ol>

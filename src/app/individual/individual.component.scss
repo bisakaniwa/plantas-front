@@ -1,0 +1,44 @@
+h3 {
+    font-family: 'Avocado Cake';
+}
+
+label {
+    margin-left: 5%;
+    font-size: 2rem;
+}
+
+li {
+    font-size: 1.7rem;
+    padding-bottom: 2%;
+}
+
+h4 {
+    font-family: 'Avocado Cake';
+    font-size: 2.3rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-family: 'Avocado Cake';
+    font-size: 3rem;
+    text-align: center;
+}
+
+.coluna {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.alinhar {
+    text-align: center;
+}
+
+.fonte {
+    font-family: "Write Song";
+    font-size: 2rem;
+}
+
+p {
+    margin-top: 1%;
+}

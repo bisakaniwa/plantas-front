@@ -1,0 +1,46 @@
+h1 {
+    font-family: 'Amatic SC';
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgb(59, 75, 33);
+    margin-bottom: 0;
+    text-align: start;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(59, 75, 33);
+}
+
+.sub {
+    font-family: 'Amatic SC';
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: start;
+    padding-bottom: 5%;
+    margin-left: 7.5%;
+    color: black
+}
+
+i {
+    padding-right: 2%;
+}
+
+
+
+#fundo {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../assets/background-echeveria.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#margens {
+    padding-left: 5%;
+    margin-top: 0;
+}
+
+
+section {
+    margin-bottom: 0
+}

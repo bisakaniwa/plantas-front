@@ -1,0 +1,48 @@
+<form (ngSubmit)="adicionar(planta)" [formGroup]="plantaForm">
+
+    <header>
+        Cadastrar uma planta nova:
+    </header>
+
+    <section>
+        Por favor, informe os dados!
+    </section>
+
+    <article>
+        Tipo de planta:
+        <input formControlName="tipo" type="text" placeholder="Tipo">
+    </article>
+
+    <article>
+        Gênero da planta:
+        <input formControlName="genero" type="text" placeholder="Gênero">
+    </article>
+    
+    <article>
+        Espécie da planta: 
+        <input formControlName="especie" type="text" placeholder="Espécie">
+    </article>
+
+    <article>
+        Especificação:
+        <input formControlName="especificacao" type="text" placeholder="Especificação">
+    </article>
+    
+    <article>
+        Nome popular:
+        <input formControlName="nomePopular" type="text"
+            placeholder="Nome carinhoso <3">
+        </article>
+    
+    <article>
+        URL da imagem:
+        <input formControlName="imagem" type="text" placeholder="URL">
+    </article>
+
+    <article>
+        Alguma curiosidade ou detalhe?
+        <input formControlName="detalhe" type="text" placeholder="Curiosidade/detalhe" class="box">
+    </article>
+    
+    <button type="submit">Adicionar!</button>
+</form>
