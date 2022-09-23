@@ -1,15 +1,14 @@
-<h2>Deletar uma plantinha:</h2>
+<div class="alinhar">
+<header>Deletar esta planta?</header>
+<section>
+    Tem certeza que deseja deletar essa planta? Uma vez excluída, todos os dados dela serão apagados e não será
+    possível recuperá-los!
+</section>
 
-<article>
-    Informe a seguir os dados da planta que você deseja deletar:
-<p>Tipo de planta:
-    <input type="text" placeholder="Tipo de planta">
-</p>
-<p>Gênero da planta:
-    <input type="text" placeholder="Gênero">
-</p>
-<p>Espécie da planta:
-    <input type="text" placeholder="Espécie">
-</p>
-<button type="submit">Verificar</button>
-</article>
+<button (click)="openModal('deletar')" type="button">Deletar planta</button>
+<jw-modal id="deletar">
+    <h1>Tem certeza disso?</h1>
+    <button type="submit" (click)="deletarPlanta(id)">Sim</button>
+    <button (click)="closeModal('deletar');">Pensando bem...</button>
+</jw-modal>
+</div>

@@ -21,7 +21,11 @@ export class CuidadosServiceService {
   }
 
   atualizarCuidados(cuidado: Cuidados) : Observable<Cuidados>{
-    return this.http.put<Cuidados>("http://localhost:8080/cuidados/atualizar/cuidados,", cuidado)
+    return this.http.put<Cuidados>("http://localhost:8080/cuidados/atualizar/cuidados", cuidado)
   }
-}
+
+  deletarCuidados(id: number) : Observable<Cuidados>{
+    return this.http.delete<Cuidados>("http://localhost:8080/cuidados/" + id)
+  }
+} 
 

@@ -30,12 +30,7 @@ export class PlantinhaService {
     return this.http.get<Plantinha>("http://localhost:8080/plantas/" + id)
   }
 
-  //inacabado
-  // atualizarCuidados(planta: Plantinha) : Observable<Plantinha>{
-  //   return this.http.put<Plantinha>("http://localhost:8080/plantas")
-  // }
-
-  // buscarCuidados(id: number, cuidados: Cuidados) : Observable<Plantinha> {
-  //   return this.http.get<Plantinha>("http://localhost:8080/plantas/" + id + cuidados)
-  // }
+  deletarPlanta(id: number) : Observable<Plantinha>{
+    return this.http.delete<Plantinha>("http://localhost:8080/plantas/" + id)
+  }
 }

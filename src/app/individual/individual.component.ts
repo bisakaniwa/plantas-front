@@ -46,4 +46,4 @@ export class IndividualComponent implements OnInit {
   atualizarCuidados(id: number) {
     this.router.navigate(['/cuidados', id])
   }
-}
+} 
