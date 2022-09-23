@@ -1,1 +1,31 @@
-<p>cuidados works!</p>
+<h2>Atualizar cuidados:</h2> 
+
+<div class="colunas">
+
+    <label>Substrato:</label>
+    <input [(ngModel)]="cuidado.substrato" type="text" placeholder="Tipo de substrato">
+
+    <label>Rega:</label>
+    <input [(ngModel)]="cuidado.rega" type="text" placeholder="Frequência de rega">
+
+    <label>Iluminação:</label>
+    <input [(ngModel)]="cuidado.iluminacao" type="text" placeholder="Sol pleno? Meia-sombra? Sombra iluminada?">
+
+    <label>Temperatura:</label>
+    <input [(ngModel)]="cuidado.temperatura" type="text" placeholder="Mais ativa no calor ou no frio?">
+
+    <label>Umidade do ar:</label>
+    <input [(ngModel)]="cuidado.umidade" type="text" placeholder="Umidade do ar ideal">
+
+    <label>Ventos:</label>
+    <input [(ngModel)]="cuidado.ventos" type="text" placeholder="Ventos ajudam? Atrapalham?">
+
+</div>
+
+<div class="botao">
+
+    <span></span>
+    <span></span>
+    <button type="submit">Atualizar!</button>
+    
+</div>

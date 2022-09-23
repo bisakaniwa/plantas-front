@@ -1,0 +1,35 @@
+<form (ngSubmit)="adicionarCuidados(cuidados)" [formGroup]="plantaCuidados">
+
+<h2>Adicionar cuidados:</h2>
+
+<div class="colunas">
+
+    <label>Substrato:</label>
+    <input type="text" formControlName="substrato" placeholder="Tipo de substrato">
+
+    <label>Rega:</label>
+    <input type="text" formControlName="rega" placeholder="Frequência de rega">
+
+    <label>Iluminação:</label>
+    <input type="text" formControlName="iluminacao" placeholder="Sol pleno? Meia-sombra? Sombra iluminada?">
+
+    <label>Temperatura:</label>
+    <input type="text" formControlName="temperatura" placeholder="Mais ativa no calor ou no frio?">
+
+    <label>Umidade do ar:</label>
+    <input type="text" formControlName="umidade" placeholder="Umidade do ar ideal">
+
+    <label>Ventos:</label>
+    <input type="text" formControlName="ventos" placeholder="Ventos ajudam? Atrapalham?">
+
+</div>
+
+<div class="botao">
+
+    <span></span>
+    <span></span>
+    <button type="submit">Adicionar!</button>
+    
+</div>
+
+</form>

@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Plantinha } from '../plantinha.interface';
-import { PlantinhaService } from '../plantinha.service'
 
 @Component({
   selector: 'app-home',

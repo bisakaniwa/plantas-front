@@ -6,7 +6,12 @@
     <div class="coluna">
         <div>
             <h3>
-                <label> Dados gerais: </label>
+                <div class="coluna">
+                    <label> Dados gerais: </label>
+                    <div class="posicao">
+                        <button (click)="atualizarDados(planta.id!)" type="button">Alterar</button>
+                    </div>
+                </div>
                 <ul>
                     <li> Nome científico:
                         <strong class="fonte"> {{ planta.genero }} {{ planta.especie }}</strong>
@@ -40,40 +45,50 @@
             <img src="{{ planta.imagem }}" width="50%">
         </div>
 
-        <h3>
-            <label> Cuidados: </label>
+        <h3 *ngIf="cuidado">
+            <div class="coluna">
+                <label> Cuidados: </label>
+                <div class="posicao">
+                    <button (click)="atualizarCuidados(planta.id!)" type="button">Alterar</button>
+                </div>
+            </div>
             <ul>
-                <li> Substrato:
+                <li *ngIf="cuidado.substrato"> Substrato:
                     <strong class="fonte">
-                        <!-- {{ planta.substrato }} -->
+                        {{ cuidado.substrato }}
                     </strong>
                 </li>
-                <li> Água:
+                <li *ngIf="cuidado.rega"> Rega:
                     <strong class="fonte">
-                        <!-- {{ planta.agua }} -->
+                        {{ cuidado.rega }}
                     </strong>
                 </li>
-                <li> Iluminação:
+                <li *ngIf="cuidado.iluminacao"> Iluminação:
                     <strong class="fonte">
-                        <!-- {{ planta.iluminacao }} -->
+                        {{ cuidado.iluminacao }}
                     </strong>
                 </li>
-                <li> Temperatura:
+                <li *ngIf="cuidado.temperatura"> Temperatura:
                     <strong class="fonte">
-                        <!-- {{ planta.temperatura }} -->
+                        {{ cuidado.temperatura }}
                     </strong>
                 </li>
-                <li> Umidade do ar:
+                <li *ngIf="cuidado.umidade"> Umidade do ar:
                     <strong class="fonte">
-                        <!-- {{ planta.umidade }} -->
+                        {{ cuidado.umidade }}
                     </strong>
                 </li>
-                <li> Ventos: 
+                <li *ngIf="cuidado.ventos"> Ventos:
                     <strong class="fonte">
-                        <!-- {{ planta.ventos }} -->
+                        {{ cuidado.ventos }}
                     </strong>
                 </li>
             </ul>
         </h3>
     </div>
+
+    <div *ngIf="!cuidado" class="botao">
+        <button (click)="adicionarCuidados(planta.id!)">Adicionar cuidados</button>
+    </div>
+
 </article>

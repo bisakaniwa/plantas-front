@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Plantinha } from '../plantinha.interface';
-import { PlantinhaService } from '../plantinha.service';
+import { PlantinhaService } from '../service/plantinha.service';
 import { FormBuilder } from '@angular/forms';
 import { Validators } from '@angular/forms'
-import { throwIfEmpty } from 'rxjs';
 
 @Component({
   selector: 'app-adicionar',
@@ -18,7 +17,7 @@ export class AdicionarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+ 
   plantaForm = this.plantinha.group({
     tipo: ['', [Validators.required]],
     genero: ['', [Validators.required]],
@@ -47,17 +46,6 @@ export class AdicionarComponent implements OnInit {
       )
     }
     alert("Prontinho!")
-  }
-
-
-  limpar() {
-    this.plantaForm.value.tipo = '';
-    this.plantaForm.value.genero = '';
-    this.plantaForm.value.especie = '';
-    this.plantaForm.value.especificacao = '';
-    this.plantaForm.value.nomePopular = '';
-    this.plantaForm.value.imagem = '';
-    this.plantaForm.value.detalhe = ''
   }
 }
 

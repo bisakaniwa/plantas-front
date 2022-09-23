@@ -1,12 +1,32 @@
 <h2>Modificar os dados</h2>
 
-<form>
-    Informe os dados da planta que você deseja modificar:
-    <select name="modificarCampo">
-        <option value="">Tipo de planta</option>
-        <option value="genero">Gênero</option>
-        <option value="especie">Espécie</option>
-        <option value="nomePopular">Nome popular</option>
-        <option value="imagem">Imagem</option>
-    </select>
-</form>
+<div class="dividir">
+
+    <label>Tipo de planta:</label>
+    <input [(ngModel)]="plantinha.tipo" type="text" placeholder="Tipo">
+
+    <label>Gênero da planta:</label>
+    <input [(ngModel)]="plantinha.genero" type="text" placeholder="Gênero">
+
+    <label>Espécie da planta:</label>
+    <input [(ngModel)]="plantinha.especie" type="text" placeholder="Espécie">
+
+    <label>Especificação:</label>
+    <input [(ngModel)]="plantinha.especificacao" type="text" placeholder="Especificação">
+
+    <label>Nome popular:</label>
+    <input [(ngModel)]="plantinha.nomePopular" type="text" placeholder="Nome carinhoso <3">
+
+    <label>URL da imagem:</label>
+    <input [(ngModel)]="plantinha.imagem" type="text" placeholder="URL">
+
+    <label>Alguma curiosidade ou detalhe?</label>
+    <input [(ngModel)]="plantinha.detalhe" class="box" type="text" placeholder="Curiosidade/detalhe" class="box">
+
+</div>
+
+<div class="fim">
+    <span></span>
+    <span></span>
+    <button (click)="atualizarDados(plantinha)" type="submit">Modificar!</button>
+</div>

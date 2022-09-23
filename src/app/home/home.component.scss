@@ -29,7 +29,7 @@ form {
     font-family: 'Write Song';
 }
 
-select {
+select, input {
     font-family: 'Write Song';
     font-size: 1.5rem;
     font-weight: bold;
@@ -56,4 +56,5 @@ label {
     font-weight: bold;
     margin-left: 3%;
     text-decoration: underline;
+    padding-bottom: 5%;
 }

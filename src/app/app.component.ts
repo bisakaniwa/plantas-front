@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Plantinha } from './plantinha.interface';
-import { PlantinhaService } from './plantinha.service';
+import { PlantinhaService } from './service/plantinha.service';
 
 @Component({
   selector: 'app-root',
