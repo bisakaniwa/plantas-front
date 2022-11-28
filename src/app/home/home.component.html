@@ -1,8 +1,11 @@
 <nav>
     <header class="margem">O que você gostaria de fazer?</header>
     <ul>
-    <p [(ngModel)]="tudo">
+    <p>
         <a (click)="mostrarTudo()" routerLink="ver-tudo">Ver lista completa<i class="fa-regular fa-hand-pointer"></i> </a>
+    </p>
+    <p>
+        <a routerLink="/generos">Ver por gênero</a>
     </p>
     <p> 
         <app-buscar></app-buscar>

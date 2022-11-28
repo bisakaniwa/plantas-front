@@ -1,0 +1,7 @@
+<h2> Ver plantas por gênero </h2>
+
+<div *ngFor="let genero of plantas">
+<li>
+    <a [routerLink]="['../genero/', genero]"> {{ genero }} </a>
+</li>
+</div>

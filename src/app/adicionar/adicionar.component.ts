@@ -3,6 +3,7 @@ import { Plantinha } from '../plantinha.interface';
 import { PlantinhaService } from '../service/plantinha.service';
 import { FormBuilder } from '@angular/forms';
 import { Validators } from '@angular/forms'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-adicionar',
@@ -13,7 +14,7 @@ export class AdicionarComponent implements OnInit {
 
   planta: Plantinha = {} as Plantinha;
 
-  constructor(private plantaService: PlantinhaService, private plantinha: FormBuilder) { }
+  constructor(private plantaService: PlantinhaService, private plantinha: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -45,7 +46,8 @@ export class AdicionarComponent implements OnInit {
       }
       )
     }
-    alert("Prontinho!")
+    alert("Prontinho!");
+    this.router.navigate(['/ver-tudo']);
   }
 }
 

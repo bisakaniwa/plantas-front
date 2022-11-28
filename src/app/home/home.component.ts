@@ -8,8 +8,6 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit { 
 
-  tudo: string = '';
-
   constructor(
     private router: Router
   ) { }
@@ -24,5 +22,5 @@ export class HomeComponent implements OnInit {
   adicionar() {
     return this.router.navigate(['/adicionar'])
   }
-
+ 
 }

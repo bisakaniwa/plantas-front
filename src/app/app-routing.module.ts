@@ -4,6 +4,8 @@ import { AddCuidadosComponent } from './add-cuidados/add-cuidados.component';
 import { AdicionarComponent } from './adicionar/adicionar.component';
 import { CuidadosComponent } from './cuidados/cuidados.component';
 import { DeletarComponent } from './deletar/deletar.component';
+import { GeneroComponent } from './genero/genero.component';
+import { PaginasGenerosComponent } from './genero/paginas-generos/paginas-generos.component';
 import { HomeComponent } from './home/home.component';
 import { IndividualComponent } from './individual/individual.component';
 import { ModificarComponent } from './modificar/modificar.component';
@@ -20,7 +22,9 @@ const routes: Routes = [
   { path: 'individual/:id', component: IndividualComponent },
   { path: 'modificar-dados/:id', component: ModificarComponent },
   { path: 'cuidados/:id', component: CuidadosComponent },
-  { path: 'add-cuidados/:id', component: AddCuidadosComponent }
+  { path: 'add-cuidados/:id', component: AddCuidadosComponent },
+  { path: 'generos', component: GeneroComponent },
+  { path: 'genero/:genero', component: PaginasGenerosComponent },
 ];
 
 @NgModule({

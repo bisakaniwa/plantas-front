@@ -17,7 +17,9 @@ import { FormsModule } from '@angular/forms';
 import { VerTudoComponent } from './ver-tudo/ver-tudo.component';
 import { IndividualComponent } from './individual/individual.component';
 import { CuidadosComponent } from './cuidados/cuidados.component';
-import { AddCuidadosComponent } from './add-cuidados/add-cuidados.component'
+import { AddCuidadosComponent } from './add-cuidados/add-cuidados.component';
+import { GeneroComponent } from './genero/genero.component';
+import { PaginasGenerosComponent } from './genero/paginas-generos/paginas-generos.component'
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { AddCuidadosComponent } from './add-cuidados/add-cuidados.component'
     VerTudoComponent,
     IndividualComponent,
     CuidadosComponent,
-    AddCuidadosComponent
+    AddCuidadosComponent,
+    GeneroComponent,
+    PaginasGenerosComponent
   ],
   imports: [
     BrowserModule,

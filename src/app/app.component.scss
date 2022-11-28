@@ -11,7 +11,7 @@ h1 {
 a {
     text-decoration: none;
     color: rgb(59, 75, 33);
-}
+} 
 
 .sub {
     font-family: 'Amatic SC';
@@ -27,20 +27,17 @@ i {
     padding-right: 2%;
 }
 
-
-
 #fundo {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../assets/background-echeveria.jpg);
     background-position: center;
-    background-size: cover;
-    height: 100%;
+    background-size: contain;
+    background-repeat: repeat;
 }
 
 #margens {
     padding-left: 5%;
     margin-top: 0;
 }
-
 
 section {
     margin-bottom: 0

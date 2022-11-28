@@ -1,0 +1,5 @@
+<h2> {{ generoListado }} </h2>
+
+<div *ngFor="let planta of generos">
+    <a [routerLink]="['../../individual/', planta.id]"> {{ planta.especie }} </a>
+</div>
