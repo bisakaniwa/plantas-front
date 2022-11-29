@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Cuidados } from '../plantinha.interface';
+import { Cuidados } from '../interface/plantinha.interface';
 
 @Injectable({
   providedIn: 'root'

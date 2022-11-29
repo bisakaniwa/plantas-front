@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Plantinha } from 'src/app/plantinha.interface';
+import { Plantinha } from 'src/app/interface/plantinha.interface';
 import { PlantinhaService } from 'src/app/service/plantinha.service';
 
 @Component({

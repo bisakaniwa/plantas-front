@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Cuidados, Plantinha } from '../plantinha.interface';
+import { Cuidados, Plantinha } from '../interface/plantinha.interface';
 import { CuidadosServiceService } from '../service/cuidados-service.service';
 import { PlantinhaService } from '../service/plantinha.service';
 

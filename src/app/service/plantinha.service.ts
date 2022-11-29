@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Plantinha } from '../plantinha.interface';
+import { Plantinha } from '../interface/plantinha.interface';
 import { Observable } from 'rxjs';
 
 @Injectable({

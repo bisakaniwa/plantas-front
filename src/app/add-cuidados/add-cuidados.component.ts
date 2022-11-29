@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
-import { Cuidados } from '../plantinha.interface';
+import { Cuidados } from '../interface/plantinha.interface';
 import { CuidadosServiceService } from '../service/cuidados-service.service';
 import { PlantinhaService } from '../service/plantinha.service';
 

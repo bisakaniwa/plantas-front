@@ -1,3 +1,5 @@
+<mat-spinner mode="indeterminate" class="spinner" *ngIf="waiting"></mat-spinner>
+<div *ngIf="!waiting">
 <h2>Plantinhas cadastradas:</h2>
 <ol>
     <div *ngFor="let todas of plantas">
@@ -9,3 +11,4 @@
         </article>
     </div>
 </ol>
+</div>
