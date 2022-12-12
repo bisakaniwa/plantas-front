@@ -1,27 +1,47 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Event, Router, NavigationStart, NavigationEnd } from '@angular/router';
 import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
+import { delay, fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit { 
+export class HomeComponent implements OnInit {
+
+  notLoading: string = '';
+  loading: boolean;
 
   constructor(
-    private router: Router
-  ) { }
+    private router: Router,
+  ) {
+ this.loading = false
+    // const clicks = fromEvent(document, 'click');
+    // const delayedClick = clicks.pipe(delay(3000));
+
+    // this.router.events.subscribe((routerEvent: Event) => {
+
+    //   if (routerEvent instanceof NavigationStart) {
+    //     this.loading = true;
+    //   }
+
+    //   if (routerEvent instanceof NavigationEnd) {
+    //     this.loading = false;
+    //   }
+    // })
+  }
 
   ngOnInit(): void {
   }
 
   mostrarTudo() {
-    return this.router.navigate(['/ver-tudo'])
+    this.loading = true;
+    setTimeout(()=>{ this.router.navigate(['/ver-tudo']) }, 2000)
   }
-  
+
   adicionar() {
     return this.router.navigate(['/adicionar'])
   }
- 
+
 }

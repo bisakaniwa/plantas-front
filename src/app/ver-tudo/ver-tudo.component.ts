@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Observable } from 'rxjs';
 import { Plantinha } from '../interface/plantinha.interface';
 import { PlantinhaService } from '../service/plantinha.service'
 
@@ -11,11 +11,14 @@ import { PlantinhaService } from '../service/plantinha.service'
 export class VerTudoComponent implements OnInit {
 
   plantas: Plantinha[] = [];
+  plants: Observable<Plantinha[]>;
 
   waiting: boolean = true;
 
   constructor(
-    private service: PlantinhaService, private route: ActivatedRoute, private router: Router) { }
+    private service: PlantinhaService,) {
+      this.plants = this.service.buscarTudo();
+     }
 
   ngOnInit(): void {
     this.verTudo();

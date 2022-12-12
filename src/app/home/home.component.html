@@ -1,17 +1,33 @@
 <nav>
     <header class="margem">O que você gostaria de fazer?</header>
     <ul>
-    <p>
-        <a (click)="mostrarTudo()" routerLink="ver-tudo">Ver lista completa<i class="fa-regular fa-hand-pointer"></i> </a>
-    </p>
-    <p>
-        <a routerLink="/generos">Ver por gênero</a>
-    </p>
-    <p> 
-        <app-buscar></app-buscar>
-    </p> 
-    <p>
-        <a (click)="adicionar()" routerLink="adicionar">Cadastrar uma planta nova<i class="fa-regular fa-hand-pointer"></i></a>
-    </p>
-</ul>
+        <article>
+            <app-buscar></app-buscar>
+        </article>
+
+        <article>
+            <a (click)="mostrarTudo()" routerLink="ver-tudo">
+                <mat-icon class="material-symbols-outlined"> forest </mat-icon>
+                Ver lista completa </a>
+        </article>
+
+        <article>
+            <a routerLink="/generos">
+                <mat-icon class="material-symbols-outlined"> forest </mat-icon>
+                Ver por gênero </a>
+        </article>
+
+        <article>
+            <a (click)="adicionar()" routerLink="adicionar">
+                <mat-icon class="material-symbols-outlined"> forest </mat-icon>
+                Cadastrar uma planta nova </a>
+        </article>
+    </ul>
+    <!--
+    <button (click)="mostrarTudo()"> <label *ngIf="!loading">Teste</label>
+        <div *ngIf="loading">
+            <mat-spinner></mat-spinner>
+        </div>
+    </button>
+-->
 </nav>

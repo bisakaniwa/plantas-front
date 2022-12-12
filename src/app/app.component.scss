@@ -30,9 +30,9 @@ i {
 #fundo {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../assets/background-echeveria.jpg);
     background-position: center;
-    background-size: contain;
-    background-repeat: repeat;
-    height: 100%;
+    background-size: auto;
+    background-repeat: repeat-y repeat-x;
+    height: 100% max-content;
 }
 
 #margens {

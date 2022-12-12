@@ -1,0 +1,42 @@
+h2 {
+    font-family: 'Avocado Cake';
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-top: 0;
+}
+
+a {
+    font-family: 'Write Song';
+    color: black;
+    font-weight: bold;
+    margin-left: 3%;
+    font-size: 2.3rem;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(55, 92, 92);
+    cursor: pointer;
+}
+
+button {
+    font-family: 'Write Song';
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.margem {
+    margin-bottom: 0.5%;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.content {
+    margin-left: 15%;
+    justify-items: center;
+}

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Plantinha } from '../interface/plantinha.interface';
-import { Observable } from 'rxjs';
+import { delay, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +19,7 @@ export class PlantinhaService {
   }
 
   buscarTudo() : Observable<Plantinha[]> {
-    return this.http.get<Plantinha[]>("http://localhost:8080/plantas");
+    return this.http.get<Plantinha[]>("http://localhost:8080/plantas")
   }
 
   buscarPorGenero(genero: string) : Observable<Plantinha[]> {
@@ -27,7 +27,7 @@ export class PlantinhaService {
   }
 
   buscarGenero() : Observable<String[]> {
-    return this.http.get<String[]>("http://localhost:8080/plantas/genero")
+    return this.http.get<String[]>("http://localhost:8080/plantas/generos")
   }
 
   buscarGeneroEspecie(termo: string) : Observable<Plantinha[]> {

@@ -1,10 +1,11 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { ModalModule } from './_modal';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +21,8 @@ import { IndividualComponent } from './individual/individual.component';
 import { CuidadosComponent } from './cuidados/cuidados.component';
 import { AddCuidadosComponent } from './add-cuidados/add-cuidados.component';
 import { GeneroComponent } from './genero/genero.component';
-import { PaginasGenerosComponent } from './genero/paginas-generos/paginas-generos.component'
+import { PaginasGenerosComponent } from './genero/paginas-generos/paginas-generos.component';
+import { AddGenerosComponent } from './genero/add-generos/add-generos.component'
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { PaginasGenerosComponent } from './genero/paginas-generos/paginas-genero
     CuidadosComponent,
     AddCuidadosComponent,
     GeneroComponent,
-    PaginasGenerosComponent
+    PaginasGenerosComponent,
+    AddGenerosComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +50,7 @@ import { PaginasGenerosComponent } from './genero/paginas-generos/paginas-genero
     MatButtonModule,
     ModalModule,
     MatProgressSpinnerModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

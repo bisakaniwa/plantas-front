@@ -4,12 +4,33 @@ h2 {
     font-weight: bold;
     color: black;
     margin-bottom: 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+ul {
+    font-family: "Write Song";
+    font-size: 2rem;
+    font-weight: bold;
     text-align: start;
+    margin-bottom: 1%;
     margin-top: 0;
 }
 
 a {
     text-decoration: none;
     color: rgb(59, 75, 33);
+    text-align: center;
 }
 
+a:hover {
+    color: rgb(55, 92, 92);
+    cursor: pointer;
+}
+
+.generos {
+    display: grid;
+    grid-template-columns: 30% auto;
+    text-align: start;
+    margin-left: 32%;
+}

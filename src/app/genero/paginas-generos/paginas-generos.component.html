@@ -1,5 +1,13 @@
-<h2> {{ generoListado }} </h2>
+<div class="content">
+    <div class="layout">
+        <h2> {{ generoListado }} </h2>
 
-<div *ngFor="let planta of generos">
-    <a [routerLink]="['../../individual/', planta.id]"> {{ planta.especie }} </a>
+        <article>
+            <button routerLink="/add-generos"> Adicionar </button>
+        </article>
+
+    </div>
+    <div *ngFor="let planta of generos" class="margem">
+        <a [routerLink]="['../../individual/', planta.id]"> {{ planta.especie }} </a>
+    </div>
 </div>

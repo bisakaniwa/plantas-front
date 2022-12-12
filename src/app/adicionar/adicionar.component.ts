@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 export class AdicionarComponent implements OnInit {
 
   planta: Plantinha = {} as Plantinha;
-
+  
   constructor(private plantaService: PlantinhaService, private plantinha: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
