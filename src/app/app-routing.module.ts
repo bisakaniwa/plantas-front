@@ -4,6 +4,7 @@ import { AddCuidadosComponent } from './add-cuidados/add-cuidados.component';
 import { AdicionarComponent } from './adicionar/adicionar.component';
 import { CuidadosComponent } from './cuidados/cuidados.component';
 import { DeletarComponent } from './deletar/deletar.component';
+import { AddGenerosComponent } from './genero/add-generos/add-generos.component';
 import { GeneroComponent } from './genero/genero.component';
 import { PaginasGenerosComponent } from './genero/paginas-generos/paginas-generos.component';
 import { HomeComponent } from './home/home.component';
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: 'add-cuidados/:id', component: AddCuidadosComponent },
   { path: 'generos', component: GeneroComponent },
   { path: 'genero/:genero', component: PaginasGenerosComponent },
-];
+  { path: 'add-generos/:genero', component: AddGenerosComponent },
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

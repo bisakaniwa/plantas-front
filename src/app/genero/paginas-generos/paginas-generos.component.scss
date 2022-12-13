@@ -33,10 +33,21 @@ button {
 
 .layout {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
 }
 
 .content {
     margin-left: 15%;
     justify-items: center;
+    height: 100%;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+}
+
+.voltar {
+    margin-left: 45%;
 }

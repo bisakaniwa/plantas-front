@@ -1,11 +1,15 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { ModalModule } from './_modal';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatMenuModule } from '@angular/material/menu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,7 +26,8 @@ import { CuidadosComponent } from './cuidados/cuidados.component';
 import { AddCuidadosComponent } from './add-cuidados/add-cuidados.component';
 import { GeneroComponent } from './genero/genero.component';
 import { PaginasGenerosComponent } from './genero/paginas-generos/paginas-generos.component';
-import { AddGenerosComponent } from './genero/add-generos/add-generos.component'
+import { AddGenerosComponent } from './genero/add-generos/add-generos.component';
+import { ShortcutComponent } from './shortcut/shortcut.component'
 
 @NgModule({
   declarations: [
@@ -39,7 +44,8 @@ import { AddGenerosComponent } from './genero/add-generos/add-generos.component'
     AddCuidadosComponent,
     GeneroComponent,
     PaginasGenerosComponent,
-    AddGenerosComponent
+    AddGenerosComponent,
+    ShortcutComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +57,10 @@ import { AddGenerosComponent } from './genero/add-generos/add-generos.component'
     ModalModule,
     MatProgressSpinnerModule,
     MatIconModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatMenuModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

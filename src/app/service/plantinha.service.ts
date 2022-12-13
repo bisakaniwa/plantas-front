@@ -22,6 +22,14 @@ export class PlantinhaService {
     return this.http.get<Plantinha[]>("http://localhost:8080/plantas")
   }
 
+  buscarTipos() : Observable<String[]> {
+    return this.http.get<String[]>("http://localhost:8080/plantas/tipos")
+  }
+
+  buscarPorTipo(tipo: string) : Observable<Plantinha[]> {
+    return this.http.get<Plantinha[]>("http://localhost:8080/plantas/tipo/" + tipo)
+  }
+
   buscarPorGenero(genero: string) : Observable<Plantinha[]> {
     return this.http.get<Plantinha[]>("http://localhost:8080/plantas/genero/" + genero)
   }

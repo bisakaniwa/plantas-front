@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Plantinha } from './interface/plantinha.interface';
-import { PlantinhaService } from './service/plantinha.service';
 
 @Component({
   selector: 'app-root',
@@ -10,14 +9,11 @@ import { PlantinhaService } from './service/plantinha.service';
 export class AppComponent implements OnInit {
 
   plantas: Plantinha[] = []
+  aberto: boolean = false
 
-  constructor(
-    private plantinhaService: PlantinhaService
-  ) {}
-  ngOnInit(): void {
-    this.plantinhaService.buscarTudo().subscribe(planta =>{
-      this.plantas = planta;
-    } )
-  }
+  constructor() {}
+
+  ngOnInit(): void { }
+
   title = 'plantinhas';
 }

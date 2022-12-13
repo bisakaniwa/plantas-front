@@ -1,0 +1,33 @@
+article {
+    font-family: 'Write Song';
+    font-size: 2.3rem;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 30% 40% auto;
+}
+
+input, button {
+    font-family: 'Write Song';
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+input {
+    width: 80%;
+    align-self: center;
+    margin-top: 2%;
+    align-content: center;
+}
+
+input::placeholder {
+    padding-left: 1%;
+}
+
+.submit {
+    margin-right: 5%;
+}
+
+.botoes {
+    margin-bottom: 5%;
+}

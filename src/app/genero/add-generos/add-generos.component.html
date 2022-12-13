@@ -1,1 +1,42 @@
-<p>add-generos works!</p>
+<form (ngSubmit)="adicionar(planta)" [formGroup]="plantaForm">
+    <article>
+        <label>Tipo de planta:</label>
+        <input type="text" placeholder="Tipo" [defaultValue]="this.tipoListado">
+    </article>
+
+    <article>
+        <label>Gênero da planta:</label>
+        <input type="text" placeholder="Gênero" [defaultValue]="this.generoListado">
+    </article>
+
+    <article>
+        <label>Espécie da planta:</label>
+        <input formControlName="especie" type="text" placeholder="Espécie">
+    </article>
+
+    <article>
+        <label>Especificação:</label>
+        <input formControlName="especificacao" type="text" placeholder="Especificação">
+    </article>
+
+    <article>
+        <label>Nome popular:</label>
+        <input formControlName="nomePopular" type="text" placeholder="Nome carinhoso <3">
+    </article>
+
+    <article>
+        <label>URL da imagem:</label>
+        <input formControlName="imagem" type="text" placeholder="URL">
+    </article>
+
+    <article>
+        <label>Alguma curiosidade ou detalhe?</label>
+        <input formControlName="detalhe" class="box" type="text" placeholder="Curiosidade/detalhe" class="box">
+    </article>
+
+    <div class="botoes">
+        <button class="submit" type="submit"> Prontinho! </button>
+        <button [routerLink]="['/genero/', this.generoListado]"> Voltar </button>
+    </div>
+
+</form>

@@ -24,5 +24,4 @@ export class GeneroComponent implements OnInit {
     })
   }
 
-
 }

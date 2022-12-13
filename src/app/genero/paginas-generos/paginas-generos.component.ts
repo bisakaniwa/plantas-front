@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Plantinha } from 'src/app/interface/plantinha.interface';
 import { PlantinhaService } from 'src/app/service/plantinha.service';
 
@@ -13,7 +13,7 @@ export class PaginasGenerosComponent implements OnInit {
   generos: Plantinha[] = []
   generoListado: String = ''
 
-  constructor(private route: ActivatedRoute, private service: PlantinhaService) { }
+  constructor(private route: ActivatedRoute, private service: PlantinhaService, private router: Router) { }
 
   ngOnInit(): void {
     const genero = String(this.route.snapshot.paramMap.get('genero'));
@@ -25,5 +25,9 @@ export class PaginasGenerosComponent implements OnInit {
     this.service.buscarPorGenero(genero).subscribe(genero => {
       this.generos = genero
     })
+  }
+
+  adicionarPorGenero() {
+    return this.router.navigate(['/add-generos', this.generoListado])
   }
 }

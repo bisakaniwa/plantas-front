@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PlantinhaService } from '../service/plantinha.service';
 import { Plantinha } from '../interface/plantinha.interface';
 
@@ -14,7 +14,8 @@ export class ModificarComponent implements OnInit {
 
   constructor( 
     private service: PlantinhaService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
  
   ) { }
 
@@ -36,6 +37,7 @@ export class ModificarComponent implements OnInit {
       this.plantinha = plantaNova;
     })
     alert("Prontinho!")
+    this.router.navigate(['/individual/', this.plantinha.id])
   }
 
 }

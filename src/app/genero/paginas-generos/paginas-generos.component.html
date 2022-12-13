@@ -2,9 +2,15 @@
     <div class="layout">
         <h2> {{ generoListado }} </h2>
 
-        <article>
-            <button routerLink="/add-generos"> Adicionar </button>
-        </article>
+        <div class="botoes">
+            <article>
+                <button (click)="adicionarPorGenero()"> Adicionar </button>
+            </article>
+
+            <article>
+                <button class="voltar" routerLink="/generos"> Voltar </button>
+            </article>
+        </div>
 
     </div>
     <div *ngFor="let planta of generos" class="margem">

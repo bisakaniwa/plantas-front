@@ -1,0 +1,18 @@
+<button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon class="shortcut">shortcut</mat-icon>
+</button>
+
+<mat-menu #menu>
+    <button mat-menu-item routerLink="">
+        <mat-icon>home</mat-icon>
+        <span> Home </span>
+    </button>
+    <button mat-menu-item routerLink="/ver-tudo">
+        <mat-icon>view_list</mat-icon>
+        <span> Ver tudo </span>
+    </button>
+    <button mat-menu-item routerLink="/generos">
+        <mat-icon>filter_list</mat-icon>
+        <span> Ver gêneros </span>
+    </button>
+</mat-menu>
